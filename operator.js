@@ -1,12 +1,6 @@
-const shirtsPrice = 100000
-const shoesPrice = 80000
-let totalPrice = 0
+const shoesPrice = 200000
+const capsPrice = 100000
+let totalPrice = shoesPrice + capsPrice
 
-totalPrice += shirtsPrice
-console.log(totalPrice)
+console.log(`총 구입가격은 ${totalPrice * 0.8}입니다.`)
 
-totalPrice += shoesPrice
-console.log(totalPrice)
-
-totalPrice -= shirtsPrice
-console.log(totalPrice)
