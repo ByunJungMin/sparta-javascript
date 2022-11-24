@@ -1,4 +1,9 @@
-const name = '1'
-console.log(name)
+const brandName = 'Nike'
+const modelName = 'Air Jordan'
+console.log(brandName)
+console.log(modelName)
 
-// name = '2'    const는 고정된 값이므로 변경 할 수 없다.
+const shoesPrice = 200000
+const capPrice = 180000
+console.log(shoesPrice)
+console.log(capPrice)
