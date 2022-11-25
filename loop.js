@@ -1,3 +1,7 @@
-for (let temperature = 20; temperature < 25; temperature++) {
-    console.log(`${temperature} 도 정도면 적당한 온도 입니다.`)
+for (let number = 1; number <= 20; number++) {
+    if (number % 2 === 0) {
+        console.log(`숫자 ${number}는 짝수입니다.`)
+    } else {
+        console.log(`숫자 ${number}는 홀수입니다.`)
+    }
 }
