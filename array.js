@@ -1,12 +1,10 @@
-const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const priceList = [1000, 2000, 5000, 7000, 10000, 9000, 3000, 15000, 20000, 17000]
+let sum = 0
 
-console.log(rainbowColors[0])
-console.log(rainbowColors[1])
-console.log(rainbowColors[2])
-console.log(rainbowColors[3])
-console.log(rainbowColors[4])
-console.log(rainbowColors[5])
-console.log(rainbowColors[6])
+for (const price of priceList) {
+    sum += price
+}
 
-console.log(rainbowColors.length)
-console.log(rainbowColors[rainbowColors.length - 1])  // 배열의 마지막 
+const avg = sum / priceList.length
+
+console.log(`합계: ${sum}, 평균: ${avg}`)
