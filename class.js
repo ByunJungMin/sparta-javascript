@@ -1,15 +1,28 @@
-class Notebook {
-    constructor(name, price, company) {
+class product {
+    constructor(name, price) {
         this.name = name
         this.price = price
-        this.company = company
+    }
+
+    printInfo() {
+        console.log(`name: ${this.name}, price: ${this.price}`)
     }
 }
 
+const notebook = new product('Macbook', 2000000)
 
-const notebook1 = new Notebook('Mackbook', 2000000, 'Apple')
+notebook.printInfo()
 
-console.log(notebook1)
-console.log(notebook1.name)
-console.log(notebook1.price)
-console.log(notebook1.company)
+
+
+
+
+const computer = {
+    name: 'Macbook',
+    price: 2000000,
+    printInfo: function() {
+        console.log(`name: ${this.name}, price: ${this.price}`)
+    }
+}
+
+computer.printInfo()
